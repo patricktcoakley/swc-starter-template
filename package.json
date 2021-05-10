@@ -1,0 +1,32 @@
+{
+  "name": "swc-starter-template",
+  "version": "1.0.0",
+  "description": "A starter template to start using swc.",
+  "scripts": {
+    "build": "webpack --config webpack.common.js --mode production",
+    "dev": "webpack serve --config webpack.common.js --open --liveReload --mode development",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Patrick T Coakley",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/cli": "^0.1.39",
+    "@swc/core": "^1.2.55",
+    "@swc/helpers": "^0.2.11",
+    "@swc/jest": "^0.1.2",
+    "@types/jest": "^26.0.23",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.4",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^26.6.3",
+    "sass-loader": "^11.1.0",
+    "style-loader": "^2.0.0",
+    "swc-loader": "^0.1.14",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
