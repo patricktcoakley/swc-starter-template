@@ -1,14 +1,20 @@
 {
   "name": "swc-starter-template",
-  "version": "1.0.0",
-  "description": "A starter template using swc, jest, and estlint.",
+  "version": "1.1.0",
+  "description": "A starter template for TypeScript projects using swc, jest, and eslint.",
   "scripts": {
     "build": "webpack --config webpack.common.js --mode production",
     "dev": "webpack serve --config webpack.common.js --open --liveReload --mode development",
     "test": "jest",
+    "lint": "eslint ."
   },
-  "keywords": [],
-  "author": "YOUR NAME HERE",
+  "keywords": [
+    "typescript",
+    "swc",
+    "rust",
+    "starter"
+  ],
+  "author": "Patrick T Coakley",
   "license": "MIT",
   "devDependencies": {
     "@swc/cli": "^0.1.39",

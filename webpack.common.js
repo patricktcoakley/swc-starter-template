@@ -7,7 +7,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.ts?$/ ,
+                test: /\.ts$/,
                 exclude: /node_modules/,
                 loader: "swc-loader"
             },
@@ -23,7 +23,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [ '.ts', '.js' ],
+        extensions: ['.ts', '.js'],
     },
     output: {
         filename: 'bundle.js',
@@ -36,7 +36,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [
-                'dist'
+                'dist/**'
             ],
         }),
     ],
