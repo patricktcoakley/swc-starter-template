@@ -11,7 +11,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
   ],
-  ignorePatterns: ["dist/", "webpack.*.js", "jest.*.js"],
+  ignorePatterns: ["dist/", "webpack.*.js", "jest.*.js", "docs/"],
   rules: {
     "object-curly-spacing": ["error", "always"],
     "sort-imports": ["error", {
