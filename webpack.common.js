@@ -19,7 +19,11 @@ module.exports = {
             {
                 test: /\.scss/i,
                 use: ["style-loader", "css-loader", "sass-loader"]
-            }
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+              },
         ]
     },
     resolve: {
@@ -32,7 +36,7 @@ module.exports = {
     plugins: [
         new HTMLWebpackPlugin({
             filename: 'index.html',
-            template: path.join(__dirname, 'src/index.html')
+            template: path.join(__dirname, 'static/html/index.html')
         }),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [
